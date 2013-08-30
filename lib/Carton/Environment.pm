@@ -30,7 +30,7 @@ sub _build_install_path {
 
 sub _build_vendor_cache {
     my $self = shift;
-    Path::Tiny->new($self->install_path->dirname . "/vendor/cache");
+    Path::Tiny->new($self->install_path . "/cache");
 }
 
 sub _build_tree {
